@@ -4,6 +4,9 @@
 ![Dashboard Interface](Dashboard.jpeg)  
 *Student Performance Monitoring Dashboard*
 
+---
+
+
 ![Prediction Tool](Prediction.jpeg)  
 *Performance Prediction*
 
