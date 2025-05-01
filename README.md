@@ -2,7 +2,7 @@
 **Comprehensive Academic Performance Analysis System**  
 
 ![Dashboard Interface](Dashboard.jpeg)  
-*Real-time Student Performance Monitoring Platform*
+*Student Performance Monitoring Dashboard*
 
 ## 📋 Project Description
 
