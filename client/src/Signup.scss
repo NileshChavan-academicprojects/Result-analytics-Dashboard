@@ -1,0 +1,94 @@
+// Variables
+$primary-color: #28a745;
+$secondary-color: #f8f9fa;
+$text-color: #000;
+$input-border: #ced4da;
+$box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+$font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+// Global Styles
+* {
+  font-family: $font-family;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../public/4.jpg") no-repeat center center/cover;
+  height: 100vh;
+  padding: 20px;
+
+  .signup-box {
+    background-color: rgba(255, 255, 255, 0.8); // Slight transparency for readability
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: $box-shadow;
+    text-align: center;
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      text-align: start;
+      margin-bottom: 15px;
+
+      label {
+        font-weight: bold;
+      }
+
+      input {
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid $input-border;
+        width: 100%;
+        margin-top: 5px;
+      }
+    }
+
+    .btn-signup {
+      background-color: $primary-color;
+      color: #fff;
+      border-radius: 5px;
+      width: 100%;
+      padding: 12px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+
+    .login-link {
+      width: 100%;
+      padding: 12px;
+      background-color: $secondary-color;
+      border: 1px solid rgb(0, 124, 249);
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      margin-top: 10px;
+      color: $text-color;
+      font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: lighten(rgb(0, 124, 249), 30%);
+        color: #fff;
+      }
+    }
+  }
+}

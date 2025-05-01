@@ -1,0 +1,59 @@
+.container121 {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  
+    .textarea-input, .file-input, .submit-btn, .download-btn {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      outline: none;
+      font-size: 1rem;
+    }
+  
+    .textarea-input {
+      resize: none;
+      height: 150px;
+    }
+  
+    .submit-btn, .download-btn {
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  
+    .file-input {
+      border: 2px solid #28a745;
+    }
+  
+    .download-btn {
+      background-color: #28a745;
+  
+      &:hover {
+        background-color: #218838;
+      }
+    }
+  
+    h3 {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: #333;
+    }
+  
+    .recharts-wrapper {
+      margin-top: 2rem;
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+  }

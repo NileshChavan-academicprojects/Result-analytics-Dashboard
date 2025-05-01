@@ -1,0 +1,51 @@
+.container12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.model-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .select-input {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+}
+
+.show-result-btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff; // Blue color
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3; // Darker blue on hover
+  }
+
+  &:active {
+    background-color: #004494; // Even darker blue on click
+  }
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}

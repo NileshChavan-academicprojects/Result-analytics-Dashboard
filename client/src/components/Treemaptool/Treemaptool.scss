@@ -1,0 +1,79 @@
+@import "../../styles/responsive.scss";
+
+.treemapBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+ // background: #1e293b; // Dark background for better contrast
+  padding: 60px;
+  border-radius: 8px;
+ // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 550px;
+  margin-top: 20px;
+  max-width: 700px; // Prevents chart from stretching too wide
+
+  
+
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: -100px;
+    text-align: center;
+  }
+
+  .chart {
+    margin-left: 125px;
+    margin-top: 15px;
+    width: 650px;
+    height: 260px; // Fixed height for better alignment
+
+  }
+
+  .view-all {
+    margin-top: 160px;
+    text-align: center;
+
+    a {
+      font-size: 14px;
+      font-weight: bold;
+      color: #4caf50;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #66bb6a;
+      }
+    }
+  }
+}
+
+// X-Axis and Tooltip Styles
+.name {
+  font-size: 13px;
+  fill: #b0bec5; // Light grey for better readability
+}
+
+.tooltip {
+  background: rgba(42, 52, 71, 0.9);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == sm {
+      @media (max-width: 640px) { @content; }
+    } @else if $breakpoint == md {
+      @media (max-width: 768px) { @content; }
+    } @else if $breakpoint == lg {
+      @media (max-width: 1024px) { @content; }
+    } @else if $breakpoint == xl {
+      @media (max-width: 1280px) { @content; }
+    }
+  }
+  

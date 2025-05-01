@@ -1,0 +1,85 @@
+.container12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  .selectors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    label {
+      font-size: 16px;
+      font-weight: bold;
+      color: whitesmoke;
+    }
+
+    select {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: white;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        border-color: #007bff;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: #0056b3;
+        box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+      }
+    }
+  }
+
+  .recharts-responsive-container {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+  }
+
+  // Media Queries for Responsiveness
+  @media (max-width: 1024px) {
+    .selectors {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .recharts-responsive-container {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .recharts-responsive-container {
+      height: 250px;
+    }
+
+    select {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+}

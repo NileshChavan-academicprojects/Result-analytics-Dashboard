@@ -1,0 +1,103 @@
+.container12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  // background-color: #000000;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  .textarea-input, .file-input, .select-input, .number-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.75rem;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .file-input {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  .model-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 500px;
+
+    label {
+      font-weight: bold;
+      color: #ff0000;
+    }
+
+    .select-input {
+      flex: 1;
+    }
+  }
+
+  .future-prediction {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 500px;
+
+    label {
+      font-weight: bold;
+      color: #ff0000;
+    }
+
+    .number-input {
+      flex: 1;
+      border: 2px solid #28a745;
+      border-radius: 8px;
+      padding: 0.75rem;
+      outline: none;
+      font-size: 1rem;
+    }
+  }
+
+  .submit-btn, .download-btn {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  h3 {
+    margin-top: 1rem;
+    color: #007bff;
+  }
+
+  .recharts-wrapper {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  // Responsive Design
+  @media (max-width: 600px) {
+    .textarea-input, .file-input, .select-input, .number-input, .submit-btn, .download-btn {
+      width: 100%;
+    }
+
+    .model-selector, .future-prediction {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}

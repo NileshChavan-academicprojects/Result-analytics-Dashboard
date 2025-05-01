@@ -1,0 +1,78 @@
+@import "../../styles/responsive.scss";
+
+.barChartBox1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+  background: transparent; // Dark background for better contrast
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px; // Prevents chart from stretching too wide
+
+  &:hover {
+    background: #00000087;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .chart {
+    margin-right: 25px;
+    width: 150%;
+    height: 180px; // Fixed height for better alignment
+  }
+
+  .view-all {
+    margin-top: 10px;
+    text-align: center;
+
+    a {
+      font-size: 14px;
+      font-weight: bold;
+      color: #4caf50;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #66bb6a;
+      }
+    }
+  }
+}
+
+// X-Axis and Tooltip Styles
+.name {
+  font-size: 13px;
+  fill: #b0bec5; // Light grey for better readability
+}
+
+.tooltip {
+  background: rgba(42, 52, 71, 0.9);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == sm {
+      @media (max-width: 640px) { @content; }
+    } @else if $breakpoint == md {
+      @media (max-width: 768px) { @content; }
+    } @else if $breakpoint == lg {
+      @media (max-width: 1024px) { @content; }
+    } @else if $breakpoint == xl {
+      @media (max-width: 1280px) { @content; }
+    }
+}
