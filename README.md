@@ -1,7 +1,7 @@
 # Result Analytics Dashboard  
 **Comprehensive Academic Performance Analysis System**  
 
-![Dashboard Interface](https://via.placeholder.com/800x400?text=Academic+Analytics+Dashboard)  
+![Dashboard Interface](Dashboard.jpeg)  
 *Real-time Student Performance Monitoring Platform*
 
 ## 📋 Project Description
